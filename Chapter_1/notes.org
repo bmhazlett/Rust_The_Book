@@ -1,0 +1,38 @@
+* How to compile the file here
+** rustc main.rs
+
+* How to run after compiling
+** ./main
+
+* Anatomy of a Rust Program
+fn main() {
+   println!("Hello, world!");
+}
+** fn main() {}
+*** This is a *function* 
+** println!("Hello, world");
+*** This is a *macro*
+*** "Hello, world"  is a String
+* Cargo
+** Cargo is the build system and package manager for Rust -> its super convienent
+** It also manages the dependencies
+** cargo --version
+*** This will show the version
+** cargo new <name_of_project>
+*** This will create a directory with the following files
+**** Cargo.toml
+***** Contains package info and dependencies
+**** src/main.rs
+***** This is the main method which will contain hello world
+** cargo build
+*** This will build and create and executable
+*** ./target/debug/<name_of_project>
+** cargo run
+*** This will execute the executable that was make in the build step
+** cargo check
+*** This will do a compiler check first
+** Buidling for Release
+*** cargo build --release
+**** This makes an executable in the target/release directory 
+**** It makes a more efficient program but takes longer to compile
+

@@ -1,0 +1,17 @@
+* How to compile the file here
+** rustc main.rs
+
+* How to run after compiling
+** ./main
+
+* Anatomy of a Rust Program
+fn main() {
+   println!("Hello, world!");
+}
+** fn main() {}
+*** This is a *function* 
+** println!("Hello, world");
+*** This is a *macro*
+*** "Hello, world"  is a String
+
+
